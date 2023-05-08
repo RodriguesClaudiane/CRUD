@@ -7,8 +7,10 @@
     <title>Claus</title>
 </head>
 <body>
+    <h2>Bem Vindo a sua pagina!</h2>
     <div>
-        
+        <button onClick="window.location.href= './cadastroDoCoiso.php'">Cadastre seu coiso</button>
+        <button onclick="window.location.href= './vejaSeusCoiso.php'">Veja seus coisos</button>
     </div>
 </body>
 </html>

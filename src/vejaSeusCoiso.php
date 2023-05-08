@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div>
-	<h2>Faça seu Login</h2>
+	<h2>Aqui estão seus coisos!</h2>
 		<table>
 		<tr>
 			<th>Nome</th>
@@ -15,7 +15,7 @@
 			<th>Cor</th>
 		</tr>
 		<?php $leia = fopen('coiso.csv','r')?>
-		<?php while (($laine = fgetcsv($laine)) !== false): ?>
+		<?php while (($laine = fgetcsv($leia)) !== false): ?>
 			<tr>
 			<td><?= $laine[0] ?></td>
 			<td><?= $laine[1] ?></td>

@@ -1,3 +1,7 @@
+<?php
+   session_start();
+   $_SESSION['verifiqueido'] = true;
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,7 +12,7 @@
 <body>
 <div>
 <h1>Iniciar Sessão</h1>
-<form>
+<form id="loginDoUser" method="POST">
 <label>
 Email:<br>
 <input id="email" type="email" name="email" placeholder="Digite seu email" required>
@@ -21,6 +25,6 @@ Senha:<br>
 <button onclick="window.location.href='/'">Voltar</button>
 </form>
 </div>
-	
+<script src defer="/script/autenticaAiOCara.js"></script>
 </body>
 </html>

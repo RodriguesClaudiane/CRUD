@@ -3,11 +3,6 @@
     exit();
 }
 
-
-if($_SERVER['REQUEST_METHOD'] != 'POST'){
-        exit();
-    }
-
 $nomeCoiso= $_POST['nomeCoiso'];
 $tipoCoiso= $_POST['tipoCoiso'];
 $corDoCoiso= $_POST['corDoCoiso'];

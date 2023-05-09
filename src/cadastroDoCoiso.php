@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,7 +9,7 @@
 </head>
 <body>
     <div>
-        <form id="formDoCoiso" action="/php/adicionarOCoiso.php" method="POST">
+        <form id="formDoCoiso" action="/php/adicionarCoiso.php" method="POST">
             <label>
                 <input id="nomeDo" type= "text" name="nomeCoiso" placeholder="digite aqui nome do seu coiso" required>
             </label><br>

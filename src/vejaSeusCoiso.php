@@ -1,3 +1,10 @@
+<?php
+session_start();
+    if( !isset($_SESSION['autentiqueido']) || !$_SESSION['autentiqueido']){
+        header('location: /');
+        exit();
+    } 
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -14,7 +21,7 @@
 			<th>Tipo</th>
 			<th>Cor</th>
 		</tr>
-		<?php $leia = fopen('coiso.csv','r')?>
+		<?php $leia = fopen('./coisos.csv','r')?>
 		<?php while (($laine = fgetcsv($leia)) !== false): ?>
 			<tr>
 			<td><?= $laine[0] ?></td>

@@ -1,3 +1,10 @@
+<?php
+session_start();
+    if( !isset($_SESSION['autentiqueido']) || !$_SESSION['autentiqueido']){
+        header('location: /');
+        exit();
+    } 
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>

@@ -18,8 +18,8 @@ testaPorObsequio.onreadystatechange = function(){
 const deita = new FormData();
 deita.append('username',username.value);
 deita.append('email',email.value);
-testaAquiEssaPorra.open('POST','/php/verificaCaes/verificaCao.php' , true);
-testaAquiEssaPorra.send(deita);
+testaPorObsequio.open('POST','/php/verificaCaes/verificaCao.php' , true);
+testaPorObsequio.send(deita);
  });
 
 

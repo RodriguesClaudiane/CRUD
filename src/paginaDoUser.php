@@ -1,7 +1,8 @@
+
 <?php
 session_start();
-    if( !isset($_SESSION['autentiqueido']) || !$_SESSION['autentiqueido']){
-        header('location: /');
+    if( !isset($_SESSION['verifiqueido']) || !$_SESSION['verifiqueido']){
+        header('location: /src/loginUser.php');
         exit();
     } 
 ?>
@@ -14,10 +15,11 @@ session_start();
     <title>Claus</title>
 </head>
 <body>
-    <h2>Bem Vindo a sua pagina!</h2>
+    <h2>Bem Vindo a pagina principal!</h2>
     <div>
-        <button onClick="window.location.href= './cadastroDoCoiso.php'">Cadastre seu coiso</button>
-        <button onclick="window.location.href= './vejaSeusCoiso.php'">Veja seus coisos</button>
+        <button onclick="window.location.href= './cadastroDoProduto.php'">Cadastre um produto</button><br>
+        <button onclick="window.location.href= './verProduto.php'">Veja os produtos</button><br>
+        <button onclick="window.location.href='./sair.php'">Encerrar sessão</button><br>
     </div>
 </body>
 </html>

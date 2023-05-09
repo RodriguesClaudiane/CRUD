@@ -5,8 +5,8 @@ const username= document.querySelector('#username');
 form.addEventListener('submit',(event) => {
 	event.preventDefault();
 
-const testaAquiEssaPorra = new XMLHttpRequest();
-testaAquiEssaPorra.onreadystatechange = function(){
+const testaPorObsequio = new XMLHttpRequest();
+testaPorObsequio.onreadystatechange = function(){
 	if(this.readyState === 4 && this.status === 200){
 		if(this.responseText == "essaPorraJaExiste"){
 			alert('Isso aqui ja existe irmão');

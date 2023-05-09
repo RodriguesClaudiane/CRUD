@@ -3,10 +3,9 @@
 if($_SERVER['REQUEST_METHOD'] != 'POST'){
         exit();
     }
-
+$email= $_POST['email'];
 $nome= $_POST['nome'];
 $username= $_POST['username'];
-$email= $_POST['email'];
 $senha= $_POST['senha'];
 
 

@@ -9,7 +9,7 @@
 <body>
 <div>
 <h1>Iniciar Sessão</h1>
-<form id="loginDoUser" action="/php/eOAutenticas/autenticaAiOCara.php" method="POST">
+<form id="loginDoUser" action="/php/autenticacoes/autenticacaoUser.php" method="POST">
 <label>
 Email:<br>
 <input id="email" type="email" name="email" placeholder="Digite seu email" required>
@@ -22,6 +22,6 @@ Senha:<br>
 <button onclick="window.location.href='/'">Voltar</button>
 </form>
 </div>
-<script src defer="/script/autenticaAiOCara.js"></script>
+<script src defer="/script/autenticacaoUser.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
-const cadCoiso = document.getByElementForId('formDoCoiso');
-const nomeCoiso = cadCoiso.querySelector('#nomeDo');
+const cadastroProduto = document.getByElementForId('cadastroProduto');
+const nomeProduto = cadastroProduto.querySelector('#nomeDo');
 
 cadCoiso.addEventListener('submit',(event) => {
 	event.preventDefault();
@@ -7,15 +7,15 @@ cadCoiso.addEventListener('submit',(event) => {
 const testaPorObsequio = new XMLHttpRequest();
 testaPorObsequio.onreadystatechange = function(){
 	if(this.readyState === 4 && this.status === 200){
-		if(this.responseText == "essaPorraJaExiste"){
-			alert('Isso aqui ja existe irmão');
+		if(this.responseText == "jaExiste"){
+			alert('Produto já cadastrado');
 		}else{
-			cadCoiso.submit();
+			cadastroProduto.submit();
 		}
 	}
 } 
 const deita = new FormData();
-deita.append('nomeCoiso',nomeCoiso.value);
-testaPorObsequio.open('POST','/php/verificaCaes/verificarExistenciaProduto.php' , true);
+deita.append('nomeProduto',nomeCoiso.value);
+testaPorObsequio.open('POST','/php/verificacoes/verificarExistenciaProduto.php' , true);
 testaPorObsequio.send(deita);
  });

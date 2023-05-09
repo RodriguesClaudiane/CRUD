@@ -16,7 +16,7 @@ session_start();
 </head>
 <body>
     <div>
-        <form id="formDoCoiso" action="/php/adicionarProduto.php" method="POST">
+        <form id="cadastroProduto" action="/php/adicionarProduto.php" method="POST">
             <label>
                 nome:
                 <input id="nome" type= "text" name="nome" placeholder="Digite o nome do produto" required>
@@ -33,7 +33,7 @@ session_start();
                 preço:
                 <input id="preco" type="number" step="0.01" name="preco" placeholder="Digite o valor do produto" required>
             </label><br><br>
-            <button type="submit">sub meter a informação</button><br>
+            <button type="submit">Enviar</button><br>
             <button onclick="window.location.href='/verProduto.php'">Ver produtos</button><br>
             <button onclick="window.location.href='./paginaDoUser.php'">Voltar</button>
         </form>

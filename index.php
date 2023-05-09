@@ -10,7 +10,6 @@
 
 	<br><br><button id="Login" onclick="window.location.href='./src/loginUser.php'">Login</button>
 	<br><br><button id="criarConta" onclick="window.location.href='./src/cadastroUser.php'">Criar Conta</button>
-
 </form>
 </div>
 	

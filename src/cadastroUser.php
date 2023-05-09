@@ -8,7 +8,7 @@
 <body>
 <div>
 <h1>Cadastro</h1>
-<form id='formulario' action="/php/adicionaruser.php" method="POST">
+<form id='formulario' action="/php/adicionarNovoUser.php" method="POST">
 <label>
 Nome:<br>
 <input id="nome" type="text" name="nome" placeholder="Digite seu nome" required>

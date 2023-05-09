@@ -8,8 +8,8 @@ login.addEventListener('submit',(event) => {
 const testaPorObsequio = new XMLHttpRequest();
 testaPorObsequio.onreadystatechange = function(){
 	if(this.readyState === 4 && this.status === 200){
-		if(this.responseText == "temAnguNesseCaroco"){
-			alert('O que você está tentando fazer cara?');
+		if(this.responseText == "algodeerradocertonaoesta"){
+			alert('Senha ou ou usuário incorreto');
 		}else{
 			login.submit();
 		}
@@ -18,6 +18,6 @@ testaPorObsequio.onreadystatechange = function(){
 const deita = new FormData();
 deita.append('email',email.value);
 deita.append('senha',senha.value);
-testaPorObsequio.open('POST','/php/eOAutenticas/autenticaAiOCara.php' , true);
+testaPorObsequio.open('POST','/php/autenticacoes/autenticacaoUser.php' , true);
 testaPorObsequio.send(deita);
  });

@@ -22,22 +22,22 @@ session_start();
 			<th>Categoria</th>
 			<th>Preço</th>
 		</tr>
-		<?php $leia = fopen('./produto.csv','r')?>
-		<?php while (($laine = fgetcsv($leia)) !== false): ?>
+		<?php $ler = fopen('./produto.csv','r')?>
+		<?php while (($linha = fgetcsv($ler)) !== false): ?>
 			<tr>
-			<td><?= $laine[0] ?></td>
-			<td><?= $laine[1] ?></td>
-			<td><?= $laine[2] ?></td>
-			<td><?= $laine[3] ?></td>
+			<td><?= $linha[0] ?></td>
+			<td><?= $linha[1] ?></td>
+			<td><?= $linha[2] ?></td>
+			<td><?= $linha[3] ?></td>
 			<td>
 				<form action="/php/deleteProduto.php" method="GET">
-				<input type="hidden" name="nome" value="<?= $laine[0] ?>">
+				<input type="hidden" name="nome" value="<?= $linha[0] ?>">
 				<button>Remover Produto</button>
 			</form>
 		    </td>
 			<td>
 				<form action="/php/editProduto.php" method="GET">
-					<input type="hidden" name="nome" value="<?= $laine[0] ?>">
+					<input type="hidden" name="nome" value="<?= $linha[0] ?>">
 					<button>Editar Informações</button>
 				</form>
 			</td>
